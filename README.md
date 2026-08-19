@@ -372,6 +372,32 @@ To use a different cosmology, replace either file with an output in
 the same format and pass `--cosmo-funcr=<path>` and
 `--matterpower=<path>` to the drivers.
 
+## Numerical validation
+
+PowerFull builds on the FFTLog techniques developed in
+[2-FAST](https://github.com/hsgg/TwoFAST.jl).
+
+### Relativistic contributions
+
+![Individual contributions to the angular galaxy power spectrum at ell=2](figs/peacock_ell2.png)
+
+### FFTLog bias optimization
+
+![FFTLog bias-parameter optimization](figs/fftlog_q_optimization.png)
+
+### Comparison with direct integration
+
+![TwoFAST comparison with the Lucas algorithm](figs/twofast_lucas_example.png)
+
+### Radial-grid convergence
+
+![Radial-grid convergence tests](figs/convergence_tests.png)
+
+### Independent validation
+
+![PowerFull comparison with Lucas and PkFull](figs/pkfull_validation.png)
+
+
 ## License
 
 MIT.  See `LICENSE`.
