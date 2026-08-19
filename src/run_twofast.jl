@@ -45,7 +45,12 @@ _cf = COSMO_FUNCR_PATH
 # Load packages on all workers
 @everywhere using Dierckx
 @everywhere using DelimitedFiles
-@everywhere using TwoFASTpp
+
+const TWOFASTPP_SRC = joinpath(@__DIR__, "TwoFASTpp", "src", "TwoFASTpp.jl")
+
+@everywhere include($TWOFASTPP_SRC)
+@everywhere using .TwoFASTpp
+
 @everywhere using JLD2
 @everywhere using Printf
 @everywhere using SharedArrays
