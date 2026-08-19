@@ -24,7 +24,7 @@ TOML = "fa267f1f-6049-4f14-aa54-33bafae1ed76"
 TwoFASTpp = "cd02e587-7391-490f-84ca-2419a766825a"
 
 [sources]
-TwoFASTpp = {path = "/storage/group/duj13/default/PowerFull.jl/src/TwoFASTpp"}
+TwoFASTpp = {url = "https://github.com/greglukens/PowerFull.jl", subdir = "src/TwoFASTpp"}
 
 [compat]
 DataStructures = "0.19.4"

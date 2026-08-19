@@ -11,6 +11,42 @@ galaxy power spectrum including local primordial non-Gaussianity"*
 
 ---
 
+## Installation
+
+PowerFull requires Julia 1.11 or later.
+
+PowerFull is currently installed directly from GitHub:
+
+```julia
+using Pkg
+Pkg.add(url="https://github.com/greglukens/PowerFull.jl")
+
+Then load the package with:
+
+```julia
+using PowerFull
+```
+
+For development from a local clone:
+
+```bash
+git clone https://github.com/greglukens/PowerFull.jl.git
+cd PowerFull.jl
+julia --project
+```
+
+Then in Julia:
+
+```julia
+using Pkg
+Pkg.instantiate()
+using PowerFull
+```
+
+PowerFull builds on the FFTLog machinery developed in
+[2-FAST](https://github.com/hsgg/TwoFAST.jl).
+A modified version used internally by PowerFull is included in `src/TwoFASTpp/`.
+
 ## Overview
 
 `PowerFull` computes the observed angular power spectrum $C_\ell^{ij}$
