@@ -1,0 +1,12 @@
+generated_at=2026-06-25T17:32:44.939
+parameter_file=/storage/group/duj13/default/PowerFull.jl/spherex_params_opt_gaussian.h5
+window_type=exclusive_observed_z_erf_tile
+bin_coordinate=ln(1+z)
+bins_per_sigma=0.5
+target_bin_width_sigma=2.0
+pair_mode=within_sample
+observed_zmin=0.05
+observed_zmax=4.6
+n_z_true=16385
+shot_noise=Nii=1/nbar_bin; no fsky factor
+phi=nbar(z_true)*P(observed bin|z_true), normalized to unity

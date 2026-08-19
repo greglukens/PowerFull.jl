@@ -1,0 +1,48 @@
+# Julia
+Manifest.toml
+*.jl.cov
+*.jl.*.cov
+*.jl.mem
+.julia/
+
+# Build products / scratch
+results/
+*.h5
+*.hdf5
+*.jld2
+*.o
+*.mod
+*.so
+
+# Editor / OS
+.DS_Store
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# SLURM / job logs
+slurm-*.out
+*.log
+
+# TwoFAST cache (cosmology-independent, regenerable but large)
+Cacheout_*/
+
+# Pipeline outputs (large, regenerable from run_twofast + build_and_export).
+# Keep the logs/ subdirectory tracked via .gitkeep so SLURM's
+# `#SBATCH -o production/logs/...` never silently fails on a fresh clone.
+production/
+!production/logs/
+!production/logs/.gitkeep
+
+# Local paper drafts / archived docs (use the paper repo's doc/ as authoritative)
+newdoc/
+
+# Input h5 examples: keep spherex_params_opt_gaussian.h5 tracked despite *.h5
+!spherex_params_opt_gaussian.h5
