@@ -379,33 +379,39 @@ PowerFull builds on the FFTLog techniques developed in
 
 ### Relativistic contributions at low multipoles
 
+### Relativistic contributions at low multipoles
+
 ![Individual relativistic contributions at ell=2](figs/peacock_ell2.png)
 
-*Relative contribution of the individual terms entering the full relativistic angular galaxy power spectrum at $\ell=2$. The $8\times8$ matrix shows the auto- and cross-contributions among the eight physical terms included in PowerFull, illustrating the hierarchy of density, velocity, potential, integrated, and primordial non-Gaussianity contributions on ultra-large scales.*
+*Relative contribution of the individual terms entering the full relativistic angular galaxy power spectrum at ℓ = 2. The 8×8 matrix shows the auto- and cross-contributions among the eight physical terms included in PowerFull, illustrating the hierarchy of density, velocity, potential, integrated, and primordial non-Gaussianity contributions on ultra-large scales.*
+
 
 ### FFTLog bias-parameter optimization
 
 ![FFTLog bias-parameter optimization](figs/fftlog_q_optimization.png)
 
-*Error diagnostics as a function of the FFTLog bias parameter $q$ for the nine $(p,n)$ base-integral families used by PowerFull. Solid colored curves show the maximum error metric within each $(j,j')$ sub-block, while the additional diagnostics identify plateaus and localized numerical artifacts. The vertical black line marks the adopted $q_\star$ for each base.*
+*Error diagnostics as a function of the FFTLog bias parameter q for the nine (p, n) base-integral families used by PowerFull. Solid colored curves show the maximum error metric within each (j, j′) sub-block, while the additional diagnostics identify plateaus and localized numerical artifacts. The vertical black line marks the adopted q★ for each base.*
+
 
 ### Comparison with the Lucas algorithm
 
 ![TwoFAST comparison with the Lucas algorithm](figs/twofast_lucas_example.png)
 
-*Comparison of the TwoFAST evaluation of the radial base integrals with an independent implementation of the Lucas oscillatory-integration algorithm. The comparison spans representative multipoles, radial separations, and distance ratios $R$, with the two calculations agreeing at sub-percent level over the tested range.*
+*Comparison of the TwoFAST evaluation of the radial base integrals with an independent implementation of the Lucas oscillatory-integration algorithm. The comparison spans representative multipoles, radial separations, and distance ratios R, with the two calculations agreeing at sub-percent level over the tested range.*
+
 
 ### Radial-grid convergence
 
 ![Radial-grid convergence tests](figs/convergence_tests.png)
 
-*Convergence tests for the logarithmic radial-ratio grid used in the PowerFull implementation. The calculation is tested separately against changes in the total $R$-range and in the grid spacing $d\ln R$, demonstrating numerical stability of the stored base and line-of-sight integrals over the production ranges.*
+*Convergence tests for the logarithmic radial-ratio grid used in the PowerFull implementation. The calculation is tested separately against changes in the total R range and in the grid spacing d ln R, demonstrating numerical stability of the stored base and line-of-sight integrals over the production ranges.*
+
 
 ### Independent PowerFull validation
 
 ![PowerFull comparison with Lucas and PkFull](figs/pkfull_validation.png)
 
-*Independent validation of the PowerFull integral basis at representative distance ratios $R=0.9$ and $R=0.57$. The two-point bases are compared against direct Lucas integration, while the one- and two-dimensional line-of-sight projections are compared against the independent PkFull FORTRAN implementation. Residuals are generally at the $10^{-5}$ level for the direct two-point bases, with the largest deviations arising in the most challenging low-$\ell$ lensing contribution.*
+*Independent validation of the PowerFull integral basis at representative distance ratios R = 0.9 and R = 0.57. The two-point bases are compared against direct Lucas integration, while the one- and two-dimensional line-of-sight projections are compared against the independent PkFull FORTRAN implementation. Residuals are generally at the 10⁻⁵ level for the direct two-point bases, with the largest deviations arising in the most challenging low-ℓ lensing contribution.*
 
 ## License
 
